@@ -10,32 +10,53 @@ Thanks!
 
 		<style>
 
-html { 
-  background: url(images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+.bgimg {
+	background-image: url("images/bg.jpg");
+	height: 100%;
+	position: relative;
+	opacity: 0.65;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content {
+	position: absolute;
+	left: 0;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	opacity: 1;
 }
 
 h1 {
 	font-size: 5vw;
-	text-align: center;
-	color: #f0f0f0;
 }
 
+h2 {
+	font-size: 4vw;
+}
 h3 {
 	font-size: 3vw;
-	text-align: center;
-	color: #f0f0f0;
 }
+
 		</style>
 	</head>
 
 	<body>
-		<h1>Eric Diven<br>Custom Furniture</h1>
-		<h3>Please visit<br><a href="https://longwalkwoodworking.com">longwalkwoodworking.com</a></h3>
+		<div class="bgimg">
+		</div>
+		<div class="content">
+			<h1>Eric Diven</h1>
+			<h2>Furniture Maker</h2>
+			<h3><a href="https://longwalkwoodworking.com">longwalkwoodworking.com</a></h3>
+		</div>
 	</body>
 
 </html>
